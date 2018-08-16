@@ -12,7 +12,7 @@ update: framework-arg
 .PHONY: bench
 bench: framework-arg
 	npm run start > /dev/null &
-	cd webdriver-ts && npm run selenium -- --headless --count 2 --framework $(FRAMEWORK)
+	cd webdriver-ts && npm run selenium -- --headless --count 9 --framework $(FRAMEWORK)
 	kill -9 $$(ps aux | grep '\snode /app/node_modules/.bin/http-server -c-1\s' | awk '{print $$2}')
 	cd webdriver-ts && npm run results
 	cp webdriver-ts-results/table.html results.html
