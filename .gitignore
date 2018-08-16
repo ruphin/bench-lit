@@ -42,7 +42,8 @@ tests/results/completed/
 target/
 webdriver-ts/results/
 webdriver-ts/results*
-webdriver-ts-results/table_*.html
+webdriver-ts-results/table.html
+webdriver-ts-results/src/results.ts
 webdriver-ts/table_*.html
 webdriver-ts/error-*.png
 webdriver-ts/log*
@@ -51,6 +52,8 @@ marko-*/.cache
 marko-*/static
 marko-*/build
 marko-*/src/xtable.marko
+
+results.html
 
 # keep root yarn.lock in repo so that travis will install yarn
 yarn.lock
