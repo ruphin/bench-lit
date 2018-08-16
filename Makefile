@@ -1,7 +1,7 @@
 .PHONY: init
 init:
 	npm install
-	cd webdriver-ts && npm install
+	cd webdriver-ts && npm install && npm run build-prod
 	cd webdriver-ts-results && npm install
 	for dir in frameworks/*/*; do ( cd $$dir && npm install && npm run build-prod ); done
 
