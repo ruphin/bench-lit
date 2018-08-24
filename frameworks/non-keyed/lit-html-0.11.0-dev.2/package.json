@@ -4,7 +4,7 @@
   "description": "Lit-HTML demo",
   "main": "index.js",
   "js-framework-benchmark": {
-    "frameworkVersionFromPackage": "lit-html"
+    "frameworkVersion": ""
   },
   "scripts": {
     "build-dev": "rollup -c -w",
